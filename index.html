@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio | Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="center">
+    <div class="container center">
+        <!-- HTML -->
+        <div class="prompt-container">
+            <div class="prompt">
+                <div class="prompting">
+                    <span class="username">user</span>
+                    <span class="computer">@ray-portofolio:: > > &nbsp; </span>
+                    <input type="text" id="prompt" placeholder="" onkeydown="prompt_this(this,event)">
+                </div>
+                <div id="prompt-output"></div>
+            </div>
+        </div>
+
+
+        <!-- 
+<div class="prompt-container">
+    <div class="prompt">
+        <div class="prompting">
+            <span class="username">user</span>
+            <span class="computer">@ray-portofolio:: > > &nbsp; </span>
+            <input type="text" class="prompt-input" placeholder="" onkeydown="prompt_this(event)">
+        </div>
+        <div class="prompt-output"></div>
+    </div>
+     Repeat the structure for additional prompts 
+</div>
+
+<script>
+    function prompt_this(event) {
+        if (event.key === "Enter") {
+            var currentInput = event.target;
+            var currentPrompt = currentInput.closest('.prompt');
+            var nextPrompt = currentPrompt.nextElementSibling;
+
+            if (nextPrompt) {
+                var nextInput = nextPrompt.querySelector('.prompt-input');
+                var nextOutput = nextPrompt.querySelector('.prompt-output');
+
+                var message = currentInput.value;
+                console.log("message: " + message);
+                currentInput.disabled = true;
+
+                // Display the entered message in the next output div
+                nextOutput.innerHTML = "Entered message: " + message;
+
+                // Focus on the next input for user convenience
+                nextInput.focus();
+            }
+        }
+    }
+</script>
+
+         -->
+
+
+
+        <script>
+            function prompt_this(mythis, event) {
+                if (event.key === "Enter") {
+                    console.log("message: " + mythis.value)
+                    mythis.disabled = true;
+                }
+            }
+        </script>
+    </div>
+</body>
+
+</html>
